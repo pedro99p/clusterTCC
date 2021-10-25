@@ -15,7 +15,7 @@
 FROM jrafaelsoares/faastcc_base:latest
 
 ARG repo_org=FaaSTCC
-ARG source_branch=main
+ARG source_branch=master
 ARG build_branch=docker-build
 
 USER root
@@ -36,7 +36,7 @@ RUN mkdir $HOME/.kube
 WORKDIR $HYDRO_HOME/cluster
 RUN git pull --recurse-submodules
 RUN git remote remove origin 
-RUN git remote add origin https://github.com/$repo_org/cluster
+RUN git remote add origin https://github.com/$repo_org/clusterTCC
 RUN git fetch origin && git checkout -b $build_branch origin/$source_branch
 WORKDIR /
 
