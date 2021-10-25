@@ -12,9 +12,9 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-FROM taraslykhenko/base:0.6
+FROM jrafaelsoares/faastcc_base:latest
 
-ARG repo_org=TarasLykhenko
+ARG repo_org=FaaSTCC
 ARG source_branch=main
 ARG build_branch=docker-build
 
@@ -36,7 +36,7 @@ RUN mkdir $HOME/.kube
 WORKDIR $HYDRO_HOME/cluster
 RUN git pull --recurse-submodules
 RUN git remote remove origin 
-RUN git remote add origin https://github.com/TarasLykhenko/cluster
+RUN git remote add origin https://github.com/$repo_org/cluster
 RUN git fetch origin && git checkout -b $build_branch origin/$source_branch
 WORKDIR /
 
