@@ -50,13 +50,13 @@ spec:
         - name: MGMT_IP
           value: ""
         - name: REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: REPO_BRANCH
-          value: main
+          value: master
         - name: ANNA_REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: ANNA_REPO_BRANCH
-          value: main
+          value: master
       - name: benchmark-2
         image: jrafaelsoares/faastcc_cloudburst
         imagePullPolicy: Always
@@ -72,13 +72,13 @@ spec:
         - name: MGMT_IP
           value: ""
         - name: REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: REPO_BRANCH
-          value: main
+          value: master
         - name: ANNA_REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: ANNA_REPO_BRANCH
-          value: main
+          value: master
       - name: benchmark-3
         image: jrafaelsoares/faastcc_cloudburst
         imagePullPolicy: Always
@@ -94,13 +94,13 @@ spec:
         - name: MGMT_IP
           value: ""
         - name: REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: REPO_BRANCH
-          value: main
+          value: master
         - name: ANNA_REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: ANNA_REPO_BRANCH
-          value: main
+          value: master
       - name: benchmark-4
         image: jrafaelsoares/faastcc_cloudburst
         imagePullPolicy: Always
@@ -116,12 +116,12 @@ spec:
         - name: MGMT_IP
           value: ""
         - name: REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: REPO_BRANCH
-          value: main
+          value: master
         - name: ANNA_REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: ANNA_REPO_BRANCH
-          value: main
+          value: master
       nodeSelector:
         type: B

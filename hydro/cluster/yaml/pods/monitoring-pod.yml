@@ -30,8 +30,8 @@ spec:
     - name: MGMT_IP
       value: MGMT_IP_DUMMY
     - name: REPO_ORG
-      value: taraslykhenko
+      value: FaaSTCC
     - name: REPO_BRANCH
-      value: main
+      value: master
   nodeSelector:
     type: S

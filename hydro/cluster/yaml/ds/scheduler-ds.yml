@@ -53,9 +53,9 @@ spec:
         - name: REPO_BRANCH
           value: main
         - name: ANNA_REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: ANNA_REPO_BRANCH
-          value: main
+          value: master
         - name: POLICY
           value: round-robin
       nodeSelector:

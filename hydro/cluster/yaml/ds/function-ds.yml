@@ -63,13 +63,13 @@ spec:
         - name: ROLE
           value: executor
         - name: REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: REPO_BRANCH
-          value: main
+          value: master
         - name: ANNA_REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: ANNA_REPO_BRANCH
-          value: main
+          value: master
         volumeMounts:
         - mountPath: /requests
           name: ipc
@@ -97,13 +97,13 @@ spec:
         - name: ROLE
           value: executor
         - name: REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: REPO_BRANCH
-          value: main
+          value: master
         - name: ANNA_REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: ANNA_REPO_BRANCH
-          value: main
+          value: master
         volumeMounts:
         - mountPath: /requests
           name: ipc
@@ -131,13 +131,13 @@ spec:
         - name: ROLE
           value: executor
         - name: REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: REPO_BRANCH
-          value: main
+          value: master
         - name: ANNA_REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: ANNA_REPO_BRANCH
-          value: main
+          value: master
         volumeMounts:
         - mountPath: /requests
           name: ipc
@@ -159,9 +159,9 @@ spec:
         - name: MGMT_IP
           value: MGMT_IP_DUMMY
         - name: REPO_ORG
-          value: taraslykhenko
+          value: FaaSTCC
         - name: REPO_BRANCH
-          value: main
+          value: master
         volumeMounts:
         - mountPath: /requests
           name: ipc
