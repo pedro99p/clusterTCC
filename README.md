@@ -1,8 +1,8 @@
 # FaaSTCC Cluster Management
 
-[![Build Status](https://travis-ci.com/hydro-project/cluster.svg?branch=master)](https://travis-ci.com/hydro-project/cluster)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+cluster was originally designed by the [RISE Lab](https://rise.cs.berkeley.edu) at [UC Berkeley](https://berkeley.edu). The original code can be found [here](https://github.com/hydro-project/cluster).
 
 This repository contains the cluster creation and management components of the Hydro stack. 
 
@@ -12,4 +12,4 @@ The `hydro.management` package has a management server that runs _inside_ a Hydr
 
 ## License
 
-The Hydro Project is licensed under the [Apache v2 License](LICENSE).
+FaaSTCC is licensed under the [Apache v2 License](LICENSE).
