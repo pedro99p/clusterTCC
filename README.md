@@ -12,4 +12,4 @@ The `hydro.management` package has a management server that runs _inside_ a Hydr
 
 ## License
 
-The Hydro Project is licensed under the [Apache v2 License](LICENSE).
+FaaSTCC is licensed under the [Apache v2 License](LICENSE).
