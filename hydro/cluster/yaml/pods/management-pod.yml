@@ -23,17 +23,16 @@ spec:
   restartPolicy: Never
   containers:
   - name: management-container
-    image: jrafaelsoares/faastcc_management
+    image: pedro99p/faastcc_management
+    imagePullPolicy: Never
     env:
     - name: LIBC_FATAL_STDERR_
       value: "1"
     - name: REPO_ORG
-      value: taraslykhenko
+      value: FaaSTCC
     - name: REPO_BRANCH
       value: main
     - name: ANNA_REPO_ORG
       value: FaaSTCC
     - name: ANNA_REPO_BRANCH
       value: master
-  nodeSelector:
-    type: S

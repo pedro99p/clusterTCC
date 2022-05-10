@@ -17,10 +17,18 @@
 
 IP=`ifconfig eth0 | grep 'inet' | grep -v inet6 | sed -e 's/^[ \t]*//' | cut -d' ' -f2`
 
+if [[ -z "$REPO_ORG" ]]; then
+  REPO_ORG="FaaSTCC"
+fi
+
+if [[ -z "$REPO_BRANCH" ]]; then
+  REPO_BRANCH="main"
+fi
+
 
 cd $HYDRO_HOME/anna
 git remote remove origin
-git remote add origin https://github.com/FaaSTCC/annaTCC
+git remote add origin https://github.com/$REPO_ORG/annaTCC
 while ! (git fetch -p origin)
 do
   echo "git fetch failed, retrying"
@@ -35,13 +43,7 @@ cd $HYDRO_HOME/cluster
 
 # Move to the desired branch on the desired fork. If none is specified, we
 # default to the master branch on hydro-project/cluster.
-if [[ -z "$REPO_ORG" ]]; then
-  REPO_ORG="FaaSTCC"
-fi
 
-if [[ -z "$REPO_BRANCH" ]]; then
-  REPO_BRANCH="main"
-fi
 
 git remote remove origin
 git remote add origin https://github.com/FaaSTCC/clusterTCC
