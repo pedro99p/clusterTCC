@@ -37,13 +37,8 @@ spec:
               role: routing
       containers:
       - name: routing-container
-        image: jrafaelsoares/faastcc_anna
-        resources:
-          requests:
-            memory: "4G"
-            cpu: "4"
-          limits:
-            cpu: "8"
+        image: pedro99p/faastcc_anna
+        imagePullPolicy: Never
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -55,5 +50,3 @@ spec:
           value: FaaSTCC
         - name: REPO_BRANCH
           value: master
-      nodeSelector:
-        type: S

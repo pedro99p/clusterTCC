@@ -37,14 +37,8 @@ spec:
               role: memory
       containers:
       - name: memory-container
-        image: jrafaelsoares/faastcc_anna
-        resources:
-          requests:
-            memory: "32G"
-            cpu: "4"
-          limits:
-            cpu: "8"
-        imagePullPolicy: Always
+        image: pedro99p/faastcc_anna
+        imagePullPolicy: Never
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -62,5 +56,3 @@ spec:
           value: FaaSTCC
         - name: REPO_BRANCH
           value: master
-      nodeSelector:
-        type: M

@@ -59,5 +59,3 @@ spec:
           value: master
         - name: POLICY
           value: round-robin
-      nodeSelector:
-        type: S

@@ -43,13 +43,6 @@ spec:
       - name: function-1
         image: jrafaelsoares/faastcc_cloudburst
         imagePullPolicy: Always
-        resources:
-          requests:
-            memory: "1G"
-            cpu: "1"
-          limits:
-            memory: "2G"
-            cpu: "2"
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -77,13 +70,6 @@ spec:
       - name: function-2
         image: jrafaelsoares/faastcc_cloudburst
         imagePullPolicy: Always
-        resources:
-          requests:
-            memory: "1G"
-            cpu: "1"
-          limits:
-            memory: "2G"
-            cpu: "2"
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -111,13 +97,6 @@ spec:
       - name: function-3
         image: jrafaelsoares/faastcc_cloudburst
         imagePullPolicy: Always
-        resources:
-          requests:
-            memory: "1G"
-            cpu: "1"
-          limits:
-            memory: "2G"
-            cpu: "2"
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -145,13 +124,6 @@ spec:
       - name: cache-container
         image: jrafaelsoares/faastcc_cache
         imagePullPolicy: Always
-        resources:
-          requests:
-            memory: "8G"
-            cpu: "1"
-          limits:
-            memory: "16G"
-            cpu: "2"
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -166,5 +138,3 @@ spec:
         volumeMounts:
         - mountPath: /requests
           name: ipc
-      nodeSelector:
-        type: F

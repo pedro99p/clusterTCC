@@ -27,8 +27,6 @@ spec:
       labels:
         role: gpu
     spec:
-      nodeSelector:
-        role: gpu
       restartPolicy: Always
       volumes:
       - name: ipc
@@ -39,9 +37,6 @@ spec:
       - name: function-1
         image: hydroproject/cloudburst-gpu
         imagePullPolicy: Always
-        resources:
-          limits:
-            nvidia.com/gpu: 1
         env:
         - name: ROUTE_ADDR
           value: ROUTE_ADDR_DUMMY

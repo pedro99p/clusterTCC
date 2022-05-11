@@ -124,5 +124,3 @@ spec:
           value: FaaSTCC
         - name: ANNA_REPO_BRANCH
           value: master
-      nodeSelector:
-        type: B

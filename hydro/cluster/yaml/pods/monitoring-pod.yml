@@ -22,7 +22,8 @@ metadata:
 spec:
   containers:
   - name: management-container
-    image: jrafaelsoares/faastcc_anna
+    image: pedro99p/faastcc_anna
+    imagePullPolicy: Never
     env:
     - name: LIBC_FATAL_STDERR_
       value: "1"
@@ -34,5 +35,3 @@ spec:
       value: FaaSTCC
     - name: REPO_BRANCH
       value: master
-  nodeSelector:
-    type: S

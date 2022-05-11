@@ -18,7 +18,7 @@
 IP=`ifconfig eth0 | grep 'inet' | grep -v inet6 | sed -e 's/^[ \t]*//' | cut -d' ' -f2`
 
 if [[ -z "$REPO_ORG" ]]; then
-  REPO_ORG="FaaSTCC"
+  REPO_ORG="pedro99p"
 fi
 
 if [[ -z "$REPO_BRANCH" ]]; then

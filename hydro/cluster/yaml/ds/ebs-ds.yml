@@ -27,8 +27,6 @@ spec:
       labels:
         role: ebs
     spec:
-      nodeSelector:
-        role: ebs
       hostNetwork: true
       containers:
         - name: ebs-container
