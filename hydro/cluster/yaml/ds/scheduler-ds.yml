@@ -59,5 +59,7 @@ spec:
           value: master
         - name: POLICY
           value: round-robin
+      imagePullSecrets:
+        - name: regcred
       nodeSelector:
         type: S

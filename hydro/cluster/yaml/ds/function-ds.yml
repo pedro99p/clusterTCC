@@ -166,5 +166,7 @@ spec:
         volumeMounts:
         - mountPath: /requests
           name: ipc
+      imagePullSecrets:
+        - name: regcred
       nodeSelector:
         type: F

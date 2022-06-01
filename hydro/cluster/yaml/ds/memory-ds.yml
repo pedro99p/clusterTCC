@@ -62,5 +62,7 @@ spec:
           value: FaaSTCC
         - name: REPO_BRANCH
           value: master
+      imagePullSecrets:
+        - name: regcred
       nodeSelector:
         type: M

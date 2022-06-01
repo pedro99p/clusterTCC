@@ -36,5 +36,7 @@ spec:
       value: FaaSTCC
     - name: ANNA_REPO_BRANCH
       value: master
+  imagePullSecrets:
+    - name: regcred
   nodeSelector:
     type: S
