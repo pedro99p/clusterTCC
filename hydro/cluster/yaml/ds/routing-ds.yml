@@ -38,6 +38,7 @@ spec:
       containers:
       - name: routing-container
         image: jrafaelsoares/faastcc_anna
+        imagePullPolicy: IfNotPresent
         resources:
           requests:
             memory: "4G"

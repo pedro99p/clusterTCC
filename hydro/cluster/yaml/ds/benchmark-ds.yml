@@ -38,7 +38,7 @@ spec:
       containers:
       - name: benchmark-1
         image: jrafaelsoares/faastcc_cloudburst
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -60,7 +60,7 @@ spec:
           value: master
       - name: benchmark-2
         image: jrafaelsoares/faastcc_cloudburst
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -82,7 +82,7 @@ spec:
           value: master
       - name: benchmark-3
         image: jrafaelsoares/faastcc_cloudburst
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -104,7 +104,7 @@ spec:
           value: master
       - name: benchmark-4
         image: jrafaelsoares/faastcc_cloudburst
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"

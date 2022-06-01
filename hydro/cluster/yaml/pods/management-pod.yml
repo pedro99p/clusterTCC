@@ -24,6 +24,7 @@ spec:
   containers:
   - name: management-container
     image: jrafaelsoares/faastcc_management
+    imagePullPolicy: IfNotPresent
     env:
     - name: LIBC_FATAL_STDERR_
       value: "1"
