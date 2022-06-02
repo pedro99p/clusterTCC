@@ -42,9 +42,6 @@ spec:
       containers:
       - name: function-1
         image: jrafaelsoares/faastcc_cloudburst
-<<<<<<< HEAD
-        imagePullPolicy: Always
-=======
         imagePullPolicy: IfNotPresent
         resources:
           requests:
@@ -53,7 +50,6 @@ spec:
           limits:
             memory: "2G"
             cpu: "2"
->>>>>>> 7a09b7fc118cf92156de4332c667d22bfc579ddb
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -80,9 +76,6 @@ spec:
           name: ipc
       - name: function-2
         image: jrafaelsoares/faastcc_cloudburst
-<<<<<<< HEAD
-        imagePullPolicy: Always
-=======
         imagePullPolicy: IfNotPresent
         resources:
           requests:
@@ -91,7 +84,6 @@ spec:
           limits:
             memory: "2G"
             cpu: "2"
->>>>>>> 7a09b7fc118cf92156de4332c667d22bfc579ddb
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -118,9 +110,6 @@ spec:
           name: ipc
       - name: function-3
         image: jrafaelsoares/faastcc_cloudburst
-<<<<<<< HEAD
-        imagePullPolicy: Always
-=======
         imagePullPolicy: IfNotPresent
         resources:
           requests:
@@ -129,7 +118,6 @@ spec:
           limits:
             memory: "2G"
             cpu: "2"
->>>>>>> 7a09b7fc118cf92156de4332c667d22bfc579ddb
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -156,9 +144,6 @@ spec:
           name: ipc
       - name: cache-container
         image: jrafaelsoares/faastcc_cache
-<<<<<<< HEAD
-        imagePullPolicy: Always
-=======
         imagePullPolicy: IfNotPresent
         resources:
           requests:
@@ -167,7 +152,6 @@ spec:
           limits:
             memory: "16G"
             cpu: "2"
->>>>>>> 7a09b7fc118cf92156de4332c667d22bfc579ddb
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -181,12 +165,6 @@ spec:
           value: master
         volumeMounts:
         - mountPath: /requests
-<<<<<<< HEAD
-          name: ipc
-=======
           name: ipc
       imagePullSecrets:
         - name: regcred
-      nodeSelector:
-        type: F
->>>>>>> 7a09b7fc118cf92156de4332c667d22bfc579ddb

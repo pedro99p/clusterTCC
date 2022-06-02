@@ -37,19 +37,8 @@ spec:
               role: routing
       containers:
       - name: routing-container
-<<<<<<< HEAD
         image: pedro99p/faastcc_anna
         imagePullPolicy: Never
-=======
-        image: jrafaelsoares/faastcc_anna
-        imagePullPolicy: IfNotPresent
-        resources:
-          requests:
-            memory: "4G"
-            cpu: "4"
-          limits:
-            cpu: "8"
->>>>>>> 7a09b7fc118cf92156de4332c667d22bfc579ddb
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -60,12 +49,4 @@ spec:
         - name: REPO_ORG
           value: FaaSTCC
         - name: REPO_BRANCH
-<<<<<<< HEAD
           value: master
-=======
-          value: master
-      imagePullSecrets:
-        - name: regcred
-      nodeSelector:
-        type: S
->>>>>>> 7a09b7fc118cf92156de4332c667d22bfc579ddb

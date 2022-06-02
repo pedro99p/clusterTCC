@@ -58,12 +58,6 @@ spec:
         - name: ANNA_REPO_BRANCH
           value: master
         - name: POLICY
-<<<<<<< HEAD
-          value: round-robin
-=======
           value: round-robin
       imagePullSecrets:
         - name: regcred
-      nodeSelector:
-        type: S
->>>>>>> 7a09b7fc118cf92156de4332c667d22bfc579ddb
