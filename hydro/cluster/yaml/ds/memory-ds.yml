@@ -37,8 +37,19 @@ spec:
               role: memory
       containers:
       - name: memory-container
+<<<<<<< HEAD
         image: pedro99p/faastcc_anna
         imagePullPolicy: Never
+=======
+        image: jrafaelsoares/faastcc_anna
+        resources:
+          requests:
+            memory: "32G"
+            cpu: "4"
+          limits:
+            cpu: "8"
+        imagePullPolicy: IfNotPresent
+>>>>>>> 7a09b7fc118cf92156de4332c667d22bfc579ddb
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -55,4 +66,12 @@ spec:
         - name: REPO_ORG
           value: FaaSTCC
         - name: REPO_BRANCH
+<<<<<<< HEAD
           value: master
+=======
+          value: master
+      imagePullSecrets:
+        - name: regcred
+      nodeSelector:
+        type: M
+>>>>>>> 7a09b7fc118cf92156de4332c667d22bfc579ddb
