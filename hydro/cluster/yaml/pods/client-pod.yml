@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client-pod
+  labels: 
+    role: client 
+spec:
+  containers:
+  - name: client-container
+    image: pedro99p/faastcc_anna
+    imagePullPolicy: Never
+    env:
+    - name: LIBC_FATAL_STDERR_
+      value: "1"
+    - name: SERVER_TYPE
+      value: mn
+    - name: MGMT_IP
+      value: MGMT_IP_DUMMY
+    - name: REPO_ORG
+      value: FaaSTCC
+    - name: REPO_BRANCH
+      value: master

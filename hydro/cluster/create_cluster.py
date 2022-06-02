@@ -145,6 +145,12 @@ def create_cluster(mem_count, ebs_count, func_count, gpu_count, sched_count,
     batch_add_nodes(client, apps_client, cfile, ['benchmark'], [bench_count],
                     BATCH_SIZE, prefix)
 
+    print("# Start the client pod.")
+    mon_spec = util.load_yaml('yaml/pods/client-pod.yml', prefix)
+    util.replace_yaml_val(mon_spec['spec']['containers'][0]['env'], 'MGMT_IP',
+                          management_ip)
+    client.create_namespaced_pod(namespace=util.NAMESPACE, body=mon_spec)
+
     print('Finished creating all pods...')
     os.system('touch setup_complete')
     util.copy_file_to_pod(client, 'setup_complete', management_podname, '/hydro',
