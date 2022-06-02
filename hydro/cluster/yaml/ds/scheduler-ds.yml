@@ -39,7 +39,7 @@ spec:
       containers:
       - name: scheduler-container
         image: jrafaelsoares/faastcc_cloudburst
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         env:
         - name: LIBC_FATAL_STDERR_
           value: "1"
@@ -58,4 +58,12 @@ spec:
         - name: ANNA_REPO_BRANCH
           value: master
         - name: POLICY
+<<<<<<< HEAD
           value: round-robin
+=======
+          value: round-robin
+      imagePullSecrets:
+        - name: regcred
+      nodeSelector:
+        type: S
+>>>>>>> 7a09b7fc118cf92156de4332c667d22bfc579ddb
